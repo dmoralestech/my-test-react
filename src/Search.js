@@ -21,9 +21,12 @@ class Search extends Component {
     render() {
         return (
             <div>
+                <p>{this.props.searchText}</p>
                 Search Term:
                 <input type="search" value={this.state.searchTerm}
                        onChange={this.handleChange.bind(this)}/>
+
+                <p>{this.state.searchTerm}</p>
             </div>
         );
     }
