@@ -9,9 +9,9 @@ class Sample extends Component {
     render() {
         return (
             <div>
-                <SubComponent title="A"/>
-                <SubComponent title="B"/>
-                <SubComponent title="C"/>
+                <SubComponent title={this.props.header1}/>
+                <SubComponent title={this.props.header2}/>
+                <SubComponent title={this.props.header3}/>
             </div>
 
         );
