@@ -9,9 +9,9 @@ class Sample extends Component {
     render() {
         return (
             <div>
-                <SubComponent title={this.props.header1}/>
-                <SubComponent title={this.props.header2}/>
-                <SubComponent title={this.props.header3}/>
+                <SubComponent title={this.props.header1} color="blue"/>
+                <SubComponent title={this.props.header2} color="yellow"/>
+                <SubComponent title={this.props.header3} color="green"/>
             </div>
 
         );
@@ -24,7 +24,7 @@ class SubComponent extends Component {
         return (
             <div>
                 <h1>
-                    {this.props.title}
+                    <font color={this.props.color}>{this.props.title}</font>
                 </h1>
             </div>
 
