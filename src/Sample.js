@@ -22,9 +22,10 @@ class Sample extends Component {
 class SubComponent extends Component {
     render() {
         return (
-            <div>
+            <div style={{color: this.props.color}} >
                 <h1>
-                    <font color={this.props.color}>{this.props.title}</font>
+                    {this.props.title}
+                    {/*<font color={this.props.color}>{this.props.title}</font>*/}
                 </h1>
             </div>
 
