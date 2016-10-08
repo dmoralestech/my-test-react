@@ -16,7 +16,6 @@ class Sample extends Component {
 
         );
     }
-
 }
 
 class SubComponent extends Component {
