@@ -37,18 +37,18 @@
 <!--<input type="week" name="#">-->
 
 <!--<form action="keygen.html" method="get"><input type="text" name="username">-->
-    <!--<keygen name="security"/>-->
-    <!--<input type="submit">-->
+<!--<keygen name="security"/>-->
+<!--<input type="submit">-->
 <!--</form>-->
 
 <!--<p>-->
 
 <!--<form onsubmit="return false"-->
-      <!--oninput="o.value=parseInt(a.value)+parseInt(b.value)">-->
-    <!--<input name="a" type="number" step="any">+-->
-    <!--<input name="b" type="number" step="any">-->
-    <!--=-->
-    <!--<output name="o"></output>-->
+<!--oninput="o.value=parseInt(a.value)+parseInt(b.value)">-->
+<!--<input name="a" type="number" step="any">+-->
+<!--<input name="b" type="number" step="any">-->
+<!--=-->
+<!--<output name="o"></output>-->
 <!--</form>-->
 <!--</p>-->
 
@@ -58,14 +58,16 @@
     <div>
         <label for="name">Name</label><br>
         <input type="text" placeholder="First" autofocus> <input type="text" placeholder="Last">
-    </div><br>
+    </div>
+    <br>
     <div>
         <label for="dob">Date of Birth</label><br> <input type="date" value="">
     </div>
     <div class="gender">
         <label for="gender">Gender</label><br>
         <input type="radio" name="gender"><label>Male</label> <input type="radio" name="gender"><label>Female</label>
-    </div><br>
+    </div>
+    <br>
     <div>
         <label for="address">Address</label><br>
         <input type="text" class="textboxAddress" placeholder="Street
@@ -80,16 +82,59 @@ Address"><br>
                placeholder="Pincode"> <select class="selectOption">
         <option value="Country">Select Country</option>
     </select>
-    </div><br>
+    </div>
+    <br>
     <div>
         <label for="contact">Phone Number</label><br> <input type="tel" class="textboxAddressDetail"
                                                              placeholder="Home">
         <input type="tel" class="textboxAddressDetail"
-               placeholder="Work"> </div><br>
+               placeholder="Work"></div>
+    <br>
     <div>
         <label for="email">Email Address</label><br> <input type="email" class="textboxAddressDetail"
-                                                            placeholder="email@example.com"> </div>
+                                                            placeholder="email@example.com"></div>
 </fieldset>
 
+<fieldset>
+    <legend class="legend">General Information</legend>
+    <div>
+        <label for="info">What is your</label><br> <input type="text" placeholder="Age?"> <input type="text"
+                                                                                                 placeholder="Weight?">
+        <input type="text" placeholder="Height?"></div>
+    <br>
+    <div>
+        <label for="exerciceinfo">Do you regularly engage in any of
+            the following exercises?</label><br>
+        <div><input type="checkbox" name="smoke"><label>Walking </label><br>
+            <input type="checkbox" name="smoke"><label>Running</label></div>
+        <div><input type="checkbox" name="smoke"><label>Swimming </label><br>
+            <input type="checkbox" name="smoke"><label>Biking </label></div>
+        <div><input type="checkbox" name="smoke"><label>Others </label><br>
+            <input type="checkbox" name="smoke"><label>I don't exercise </label></div>
+    </div>
+    <br>
+    <div>
+        <label for="sleep">On average, how many hours a day do you
+            sleep?</label><br>
+        <input type="number" class="textboxAddressDetail"></div>
+    <br>
+    <div>
+        <label for="smoking">Have you ever smoked cigarettes, pipes or
+            cigars?</label><br>
+        <input type="radio" name="smoke"><label>Yes</label>
+        <input type="radio" name="smoke"><label>No</label></div>
+    <br>
+    <div>
+        <label for="drugs">Are you currently using or do you have a
+            history of illegal drug use?</label><br>
+        <input type="radio" name="drugs"><label>Yes</label>
+        <input type="radio" name="drugs"><label>No</label></div>
+    <br>
+    <div>
+        <label for="alcohol">Do you consume alcohol?</label><br> <input type="radio" name="alcohol"><label>Yes</label>
+        <input type="radio" name="alcohol"><label>No</label>
+        ￼
+    </div>
+</fieldset>
 </body>
 </html>
