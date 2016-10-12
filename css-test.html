@@ -4,15 +4,25 @@
     <meta charset="UTF-8">
     <title>Title</title>
     <style>
-        li:nth-of-type(3) {
-            background-color: red;
+        /*li:nth-of-type(3) {*/
+            /*background-color: red;*/
+        /*}*/
+        li:not(:first-child) {
+            background-color: blanchedalmond;
         }
-        li:nth-of-type(2) {
+        li:nth-of-type(2n) {
             background-color: cornflowerblue;
         }
-        li:nth-last-of-type(1) {
-            background-color: palegoldenrod;
+        li:first-child {
+            background-color: palevioletred;
         }
+        li:only-child {
+            background-color: greenyellow;
+        }
+
+        /*li:nth-last-of-type(1) {*/
+            /*background-color: palegoldenrod;*/
+        /*}*/
     </style>
 </head>
 <body>
@@ -30,6 +40,9 @@
         <li class="hasaclass">hasaclass</li>
         <li>item 5</li>
         <li>item 6</li>
+        <ul>
+            <li>item xyz</li>
+        </ul>
         <li>item 7</li>
     </ol>
 </div>
