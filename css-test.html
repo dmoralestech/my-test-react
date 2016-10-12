@@ -3,8 +3,29 @@
 <head>
     <meta charset="UTF-8">
     <title>Title</title>
+    <style>
+        li:nth-last-of-type(2) {
+            background-color: red;
+        }
+    </style>
 </head>
 <body>
-
+<div class="ex right">
+    <ol>
+        <li>item 1</li>
+        <li>item 2</li>
+        <li>item 3
+            <ul>
+                <li>item a</li>
+                <li>item b</li>
+                <li>item c</li>
+            </ul>
+        </li>
+        <li class="hasaclass">hasaclass</li>
+        <li>item 5</li>
+        <li>item 6</li>
+        <li>item 7</li>
+    </ol>
+</div>
 </body>
 </html>
