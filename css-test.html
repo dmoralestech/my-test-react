@@ -23,9 +23,20 @@
         /*li:nth-last-of-type(1) {*/
             /*background-color: palegoldenrod;*/
         /*}*/
+
+        p::before {
+            content: 'Before '
+        }
+
+        p::after {
+            content: 'After '
+        }
     </style>
 </head>
 <body>
+<p>
+    Content
+</p>
 <div class="ex right">
     <ol>
         <li>item 1</li>
