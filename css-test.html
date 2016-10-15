@@ -5,12 +5,17 @@
     <title>Title</title>
     <style>
         /*li:nth-of-type(3) {*/
-            /*background-color: red;*/
+        /*background-color: red;*/
         /*}*/
+        body {
+            background: white;
+        }
+
         h1 {
             text-shadow: 0 3px 0 black;
             color: pink;
         }
+
         li {
             background-color: #3b414c;
             color: white;
@@ -18,21 +23,25 @@
             border-radius: 10px;
             box-shadow: 5px 5px 3px #292929;
         }
+
         li:not(:first-child) {
             background-color: blanchedalmond;
         }
+
         li:nth-of-type(2n) {
             background-color: cornflowerblue;
         }
+
         li:first-child {
             background-color: palevioletred;
         }
+
         li:only-child {
             background-color: greenyellow;
         }
 
         /*li:nth-last-of-type(1) {*/
-            /*background-color: palegoldenrod;*/
+        /*background-color: palegoldenrod;*/
         /*}*/
 
         p::before {
@@ -42,6 +51,7 @@
         p::after {
             content: 'After '
         }
+
         .box:after {
             content: 'jasdasd';
             position: absolute;
@@ -57,7 +67,7 @@
             left: 15%; /* one half of the remaining 30% (see width above) */
 
             height: 100px;
-            bottom:  0;
+            bottom: 0;
         }
     </style>
 </head>
