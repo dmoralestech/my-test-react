@@ -10,7 +10,9 @@
         li {
             background-color: #3b414c;
             color: white;
-            opacity: 0.5;
+            opacity: 0.9;
+            border-radius: 10px;
+            box-shadow: 5px 5px 3px #292929;
         }
         li:not(:first-child) {
             background-color: blanchedalmond;
@@ -36,13 +38,30 @@
         p::after {
             content: 'After '
         }
+        .box:after {
+            content: 'jasdasd';
+            position: absolute;
+
+            z-index: -1; /* hide shadow behind image */
+
+            /* The Shadow */
+            -webkit-box-shadow: 0 15px 20px rgba(0, 0, 0, 0.3);
+            -moz-box-shadow: 0 15px 20px rgba(0, 0, 0, 0.3);
+            -box-shadow: 0 15px 20px rgba(0, 0, 0, 0.3);
+
+            width: 70%;
+            left: 15%; /* one half of the remaining 30% (see width above) */
+
+            height: 100px;
+            bottom:  0;
+        }
     </style>
 </head>
 <body>
 <p>
     Content
 </p>
-<div class="ex right">
+<div class="box">
     <ol>
         <li>item 1</li>
         <li>item 2</li>
