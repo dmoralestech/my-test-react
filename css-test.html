@@ -23,6 +23,8 @@
             line-height: 1em;
             text-align: right;
             vertical-align: baseline;
+            text-indent: 50px;
+            text-shadow: #292929;
             -webkit-text-stroke: 1px black;
             color: dimgray;
         }
@@ -61,6 +63,10 @@
 
         p::after {
             content: 'After '
+        }
+
+        p:first-letter {
+            font-size: 200%
         }
 
         .box:after {
