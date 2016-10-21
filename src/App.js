@@ -19,7 +19,7 @@ class App extends Component {
     }
 }
 
-// Child Component
+// Child Component - test
 class ListItem extends Component {
     render() {
         return (
